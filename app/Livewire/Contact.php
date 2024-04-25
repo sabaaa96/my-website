@@ -47,7 +47,8 @@ class Contact extends Component
             'zip' => $this->zip,
         ]);
 
-        $this->redirect('/dashboard');
+        session()->flash('message', 'Successfull!');
+        $this->redirectRoute('welcome');
     }
 
 }
