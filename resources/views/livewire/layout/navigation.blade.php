@@ -33,8 +33,8 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('blog')" wire:navigate>
-                        {{ __('Blog') }}
+                    <x-nav-link :href="route('blog-post-form')" wire:navigate>
+                        {{ __('BlogPost') }}
                     </x-nav-link>
                     <x-nav-link :href="route('aktuell')" wire:navigate>
                         {{ __('Aktuell') }}

@@ -9,13 +9,9 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::view('blog', 'blog')
-    ->middleware(['auth', 'verified'])
-    ->name('blog');
-
-Route::view('blog', 'blog')
+Route::view('blog-post-form', 'blog-post-form')
      ->middleware(['auth', 'verified'])
-     ->name('blog');
+     ->name('blog-post-form');
 
 Route::view('aktuell', 'aktuell')
     ->middleware(['auth', 'verified'])
