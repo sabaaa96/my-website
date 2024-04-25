@@ -20,9 +20,9 @@ Route::view('aktuell', 'aktuell')
     ->middleware(['auth', 'verified'])
     ->name('aktuell');
 
-Route::view('kontakt', 'kontakt')
+Route::view('contact', 'contact')
       ->middleware(['auth', 'verified'])
-      ->name('kontakt');
+      ->name('contact');
 
 Route::view('karriere', 'karriere')
        ->middleware(['auth', 'verified'])

@@ -39,8 +39,8 @@ new class extends Component
                     <x-nav-link :href="route('aktuell')" wire:navigate>
                         {{ __('Aktuell') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('kontakt')" wire:navigate>
-                        {{ __('Kontakt') }}
+                    <x-nav-link :href="route('contact')" wire:navigate>
+                        {{ __('Contact') }}
                     </x-nav-link>
                     <x-nav-link :href="route('karriere')" wire:navigate>
                         {{ __('Karriere') }}
