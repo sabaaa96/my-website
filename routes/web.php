@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\YoutubeVideoController;
 
-Route::view('/', 'welcome')
-->name('welcome');
+//Route::view('/', 'welcome')
+//->name('welcome');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -13,9 +14,13 @@ Route::view('blog-post-form', 'blog-post-form')
      ->middleware(['auth', 'verified'])
      ->name('blog-post-form');
 
-Route::view('aktuell', 'aktuell')
+Route::view('blog-post-details/{id}', 'blog-post-details')
+    ->name('blog-post-details');
+
+Route::get('aktuell', [YoutubeVideoController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('aktuell');
+
 
 Route::view('contact', 'contact')
       ->middleware(['auth', 'verified'])
@@ -26,9 +31,9 @@ Route::view('karriere', 'karriere')
        ->name('karriere');
 
 
-Route::view('aboutus', 'aboutus')
+Route::view('aboutme', 'about-me')
     ->middleware(['auth'])
-    ->name('aboutus', 'verified');
+    ->name('aboutme', 'verified');
 
 Route::view('impressum', 'impressum')
     ->middleware(['auth', 'verified'])
