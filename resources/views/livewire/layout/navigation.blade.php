@@ -34,7 +34,7 @@ new class extends Component
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('blog-post-form')" wire:navigate>
-                        {{ __('BlogPost') }}
+                        {{ __('Write your comment') }}
                     </x-nav-link>
                     <x-nav-link :href="route('aktuell')" wire:navigate>
                         {{ __('Aktuell') }}
@@ -45,8 +45,8 @@ new class extends Component
                     <x-nav-link :href="route('karriere')" wire:navigate>
                         {{ __('Karriere') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('aboutus')" wire:navigate>
-                        {{ __('About Us') }}
+                    <x-nav-link :href="route('aboutme')" wire:navigate>
+                        {{ __('About Me') }}
                     </x-nav-link>
                     <x-nav-link :href="route('impressum')" wire:navigate>
                         {{ __('Impressum') }}

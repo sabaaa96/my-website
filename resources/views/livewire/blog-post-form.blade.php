@@ -1,7 +1,7 @@
 <div>
 
     @if (session('message'))
-        <div class="alert alert-success">
+        <div class="alert alert-success bg-indigo-100 pl-2 flex justify-center items-center">
             {{ session('message') }}
         </div>
     @endif
